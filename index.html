@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Components</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./Logo Apparel.png" height="30" alt="Leonardo Apparel Group"> Leonardo Apparel Group</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Profile</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Product
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Wovenwear</a></li>
+              <li><a class="dropdown-item" href="#">Knitwear</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Customized Product Development</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="frontpage.jpg" alt="" width="600" height="400">
+    <h1 class="display-5 fw-bold text-body-emphasis">Leonardo Apparel Group</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">“Crafting Elegance, Stitch by Stitch” 
+        <br> We specialize in creating high-quality garments that combine style, comfort, and sustainability. With a passion for excellence and years of expertise in the textile industry, we design and manufacture a wide range of clothing that caters to diverse tastes and trends. From casual wear to bespoke fashion, our commitment to quality and innovation ensures that every piece tells a story of craftsmanship and care.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Get a Quote</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact Us</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-59c09075c03f0 fl-row-default-height fl-row-align-center" data-node="59c09075c03f0">
+    <div class="fl-row-content-wrap">
+                  <div class="fl-row-content fl-row-fixed-width fl-node-content">
+      
+  <div class="fl-col-group fl-node-59c09075c1272" data-node="59c09075c1272">
+        <div class="fl-col fl-node-59c09075c1331 fl-col-bg-color" data-node="59c09075c1331">
+    <div class="fl-col-content fl-node-content">		<div id="CorporateInfo" class="fl-module fl-module-uabb-heading fl-node-59c090c708966" data-node="59c090c708966">
+    <div class="fl-module-content fl-node-content">
+      
+  <div class="uabb-module-content uabb-heading-wrapper uabb-heading-align-center ">
+    
+    
+    <h3 class="uabb-heading">
+          <span class="uabb-heading-text">CORPORATE INFO</span>
+        </h3>
+        
+  <div class="uabb-module-content uabb-separator-parent">
+  
+    
+        <div class="uabb-separator"></div>
+    </div>
+        </div>
+    </div>
+  </div>
+  <div id="about-us" class="fl-module fl-module-heading fl-node-59c090e20d6e2" data-node="59c090e20d6e2">
+    <div class="fl-module-content fl-node-content">
+      <h3 class="fl-heading">
+      <span class="fl-heading-text">About Us</span>
+    </h3>
+    </div>
+  </div>
+  <div class="fl-module fl-module-rich-text fl-node-59c090fa84475" data-node="59c090fa84475">
+    <div class="fl-module-content fl-node-content">
+      <div class="fl-rich-text">
+    <p class="xxmsonormal">Founded in 1998, Leonardo Apparel Group located in Medan, Sumatera Utara. The group specializes in woven and knit apparel, with the product range encompassing men's and women's casual wear, dress wear, active sportswear, athleisure, outerwear, and denim.</p>
+  </div>
+    </div>
+  </div>
+  <div class="fl-module fl-module-heading fl-node-59c0911cc314b" data-node="59c0911cc314b">
+    <div class="fl-module-content fl-node-content">
+      <h3 class="fl-heading">
+      <span class="fl-heading-text">Vision</span>
+    </h3>
+    </div>
+  </div>
+  <div class="fl-module fl-module-rich-text fl-node-59c0915841162" data-node="59c0915841162">
+    <div class="fl-module-content fl-node-content">
+      <div class="fl-rich-text">
+    <p>To redefine lifestyle and fashion by setting the gold standard for trust, innovation, and sustainability.</p>
+  </div>
+    </div>
+  </div>
+  <div class="fl-module fl-module-heading fl-node-59c0917591e60" data-node="59c0917591e60">
+    <div class="fl-module-content fl-node-content">
+      <h3 class="fl-heading">
+      <span class="fl-heading-text">Mission</span>
+    </h3>
+    </div>
+  </div>
+  <div class="fl-module fl-module-rich-text fl-node-59c0917f00ed6" data-node="59c0917f00ed6">
+    <div class="fl-module-content fl-node-content">
+      <div class="fl-rich-text">
+    <p>To passionately deliver creative and comprehensive solutions, fostering meaningful collaborations that elevate experiences and inspire confidence.</p>
+  </div>
+    </div>
+  </div>
+  <div class="fl-module fl-module-heading fl-node-k1h5umzoiav4" data-node="k1h5umzoiav4">
+    <div class="fl-module-content fl-node-content">
+      <h3 class="fl-heading">
+      <span class="fl-heading-text">Values</span>
+    </h3>
+    </div>
+  </div>
+  <div class="fl-module fl-module-rich-text fl-node-5pnjzhrcvbsd" data-node="5pnjzhrcvbsd">
+    <div class="fl-module-content fl-node-content">
+      <div class="fl-rich-text">
+    <h5 style="text-align: left;">
+      <strong>E</strong>xcellence| 
+      <strong>T</strong>eamwork| 
+      <strong>H</strong>umility| 
+      <strong>I</strong>ntegrity| 
+      <strong>C</strong>ustomer-Centricity| 
+      <strong>A</strong>ccountability| 
+      <strong>L</strong>earning.
+    </h5>
+  </div>
+    </div>
+  </div>
+  </div>
+  </div>
+    </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">  
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Endpage1.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Endpage2.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Endpage3.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <div class="card-header">
+      Contact Us
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Leonardo Apparel Group</h5>
+      <p class="card-text">
+        <p>Perumahan Taman Hako Indah</p>
+        <p>Jl. Kenanga, 20126,</p>
+        <p>Kota Medan, Sumatera Utara, Indonesia</p>
+        <p>Email: <a style="color: #ec1e27;" href="mailto:heruleonardo98@gmail.com?subject=Website%20Contact">heruleonardo98@gmail.com</a></p>
+        <p>Phone: <a style="color: #ec1e27;" href="tel:+6282272226678">+62 822 72226678</a></p>
+      </p>
+    </div>
+    <!-- <div class="card-footer text-body-secondary">
+      
+    </div> -->
+  </div>
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary"><img src="./Logo Apparel.png" height="30" alt="Leonardo Apparel Group"> © 2025 Leonardo Apparel Group</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+      
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
